@@ -17,7 +17,7 @@ const PasteList = (): JSX.Element => {
     async function getAllPaste() {
       const pasteResponse = await axios.get(
         // this any can be removed??
-        "https://bluewhale-pastebin.herokuapp.com/pastes"
+        "https://paste-bin-nb.onrender.com/pastes"
       );
       const pasteData: IPaste[] = pasteResponse.data;
 

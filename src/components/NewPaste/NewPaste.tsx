@@ -27,7 +27,7 @@ const NewPaste = (): JSX.Element => {
 
   async function submitPaste() {
     if (inputBody.length > 0) {
-      await axios.post("https://bluewhale-pastebin.herokuapp.com/pastes", {
+      await axios.post("https://paste-bin-nb.onrender.com/pastes", {
         title: inputTitle,
         body: inputBody,
       });
